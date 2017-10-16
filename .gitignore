@@ -1,0 +1,9 @@
+*.log
+*.aux
+*.dvi
+*.ref
+*~
+*.swp
+*.odp
+*.tmp
+*.pdf
