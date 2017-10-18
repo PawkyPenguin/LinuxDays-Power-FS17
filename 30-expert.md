@@ -21,9 +21,6 @@
 * Community-driven
 * Download software with `git clone <URL>`
 
-### Vim
-![](resources/images/vim1.png){ width=41% }\ ![](resources/images/vim2.png){ width=41% }
-
 ### Write a webserver
 <!-- TODO -->
 * Activate HTTP server with `systemctl enable httpd`
@@ -36,7 +33,7 @@
 * "Emulator" for Windows
 * Not only for games
 * Works well for most programs
-* ![WineHQ](www.winehq.org): Giant database keeping track of what works
+* [WineHQ](www.winehq.org): Giant database keeping track of what works
 
 ![](resources/images/winegames.png){ height=30% }
 
