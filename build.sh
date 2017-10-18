@@ -1,9 +1,9 @@
 #!/bin/bash
 
-build_vars="-t beamer --verbose --template=resources/template.tex --listings --latex-engine=xelatex $template_vars"
+build_vars="-t beamer --verbose --template=resources/template.tex --latex-engine=xelatex $template_vars"
 
-if [[ -n $1 ]]; then
-	pandoc $build_vars "$1" -o "${1%.md}.pdf"
+if [[ $1 == '--latex' ]]; then
+	pandoc $build_vars -f markdown [0-9]*-*.md -o "power.tex"
 else
 	pandoc $build_vars -f markdown [0-9]*-*.md -o "power.pdf"
 fi
