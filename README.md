@@ -9,6 +9,10 @@ The slides are by Nils Leuzinger, available under the CC SA-BY 4.0 license.
 Make sure you have [pandoc](https://www.pandoc.org) and [xelatex](https://www.sharelatex.com/learn/XeLaTeX) installed. They should be available on most major Linux distributions.
 
 ## Getting your slides
-Clone the repository, then execute the buildscript:
+You can do one of two things:
+
+* Download the `power.pdf` file, which contains all slides
+
+* Or build the slides yourself:
 
 `git clone https://github.com/PawkyPenguin/LinuxDays-Power-HS17 && cd LinuxDays-Power-HS17 && ./build.sh`
