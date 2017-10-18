@@ -2,12 +2,17 @@
 \usepackage[T1]{fontenc} %pipes don't display properly without this
 \usepackage[utf8]{inputenc}
 \usepackage{listings}
+\usepackage{verbatim}
+\usepackage{realboxes}
 \usepackage{color}
+\usepackage{xcolor}
+\usepackage{xpatch}
 \usepackage{datapie}
 \usepackage{multicol}
 \usepackage{siunitx} %pretty measurement unit rendering
 \usepackage{hyperref} %enable hyperlink for urls
 \usepackage{caption} % needed to tweak caption size
+\usepackage{afterpage}
 
 \usefonttheme[onlymath]{serif}
 \setcounter{MaxMatrixCols}{20}
@@ -82,7 +87,7 @@
 \definecolor{mygray}{rgb}{0.5,0.5,0.5}
 \definecolor{mymauve}{rgb}{0.58,0,0.82}
 
-\lstdefinestyle{custombash}{
+\lstset{
 	belowcaptionskip=1\baselineskip,
 	captionpos=,
 	breaklines=true,
@@ -90,19 +95,24 @@
 	xleftmargin=\parindent,
 	language=bash,
 	showstringspaces=false,
-	basicstyle=\scriptsize\ttfamily,
+	basicstyle=\ttfamily,
 	rulecolor=\color{tlg},
-	backgroundcolor=\color{tlg},
+        backgroundcolor=\color{tlg},
 	fillcolor=\color{tlg},
 	rulesepcolor=\color{tlg},
 	commentstyle=\itshape\color{purple!60!black},
-	keywordstyle=\bfseries\color{ldorange!80!black},
+	keywordstyle=\color{blue},
 	%keywordstyle=\bfseries\color{green!40!black},
 	identifierstyle=\color{blue},
 	stringstyle=\color{orange},
 }
 
-\lstset{language=Bash,style=custombash}
+
+%\let\oldinline\lstinline
+%\renewcommand{\lstinline}[1]{\Colorbox{yellow}{\oldinline{#1} }}
+\makeatletter
+\xpretocmd\lstinline{\Colorbox{tlg}\bgroup\appto\lst@DeInit{\egroup}}{}{}
+\makeatother
 
 $if(title)$
 \title{$title$}
@@ -117,10 +127,25 @@ $endif$
 \institute{\includegraphics[width=0.35\textwidth]{img/logo_blue.pdf}}
 \date{$date$}
 
+% automatically center image and choose width approximately
+\newcommand{\image}[1]{\begin{figure}[H]%
+	\centering%
+	\includegraphics[width=0.9\textwidth]{#1}%
+\end{figure}%
+	}
+
+% insert image with width as percentage of total width
+\newcommand{\imgrel}[2]{\begin{figure}[H]%
+	\centering
+	\includegraphics[width=#2\textwidth]{#1}%
+\end{figure}%
+}
+
 \renewcommand{\emph}[1]{\textcolor{ldorange}{#1}}
 \newcommand{\soft}[1]{\textcolor{lg}{#1}}
 \newcommand{\textt}[1]{\textcolor{blue}{\texttt{#1}}}
 \newcommand{\bigtext}[1]{\centering\Huge \textbf{\textcolor{ldorange}{#1}}}
+\newcommand{\notsobigtext}[1]{\centering\Large \textbf{\textcolor{ldblue}{#1}}}
 
 %shortcut to insert small logo in footline
 \def\logo{%
