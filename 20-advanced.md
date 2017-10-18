@@ -62,7 +62,7 @@
 * Can be used with `dd`
 
 ### dd and pbzip2
-* Copy and compress `/dev/sda` partition to `archive.img.pbzip`:
+* Copy and compress `/dev/sda1` partition to `archive.img.pbzip`:
   `sudo dd if=/dev/sda1 | pbzip2 > archive.img.pbzip`
 
 ### How to backup?
