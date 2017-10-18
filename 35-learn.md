@@ -4,9 +4,8 @@
 
 ### Becoming a power user
 
-```
- (੭•̀ω•́)੭̸━✩*⁺˚.*･｡ﾟ
-```
+<!-- It's 1AM, so just use a png. I wouldn't even want to find out how Latex Unicode works if it was afternoon. -->
+![](resources/images/wizard_emoticon.png)
 
 \image{resources/images/power.png}
 
