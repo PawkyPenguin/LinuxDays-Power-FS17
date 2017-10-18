@@ -33,8 +33,8 @@
 * Program some zsh
 
 ### Communities
-* ![reddit.com/r/linux](reddit.com/r/linux)
-* ![unix.stackexchange.com](unix.stackexchange.com)
+* [reddit.com/r/linux](reddit.com/r/linux)
+* [unix.stackexchange.com](unix.stackexchange.com)
 * Various forums
 * And us :)
 

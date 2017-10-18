@@ -53,9 +53,9 @@
 * `bs=4M` for faster copy
 
 ### dd
-* `sudo dd if=openSUSE.iso of=/dev/sdb bs=4M`
-  Input file is openSUSE image
-  Output file is /dev/sdb (a USB stick)
+* `sudo dd if=openSUSE.iso of=/dev/sdb bs=4M`  
+    Input file is openSUSE image  
+    Output file is /dev/sdb (a USB stick)
 
 ### pbzip2
 * `pbzip2` is like zip, but multicore
@@ -109,6 +109,10 @@
 
 * Extract one page:  
     `pdfseparate -f 5 -l 5 book.pdf page.pdf`
+
+### Search PDFs
+* `pdfgrep` for searching through content of PDFs
+* `pdfgrep "NSA" ~/Documents/infsec/*.pdf`
 
 ### Power consumption
 * `powertop`
