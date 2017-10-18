@@ -33,7 +33,7 @@
 * "Emulator" for Windows
 * Not only for games
 * Works well for most programs
-* [WineHQ](www.winehq.org): Giant database keeping track of what works
+* [WineHQ](https://www.winehq.org): Giant database keeping track of what works
 
 ![](resources/images/winegames.png){ height=30% }
 
