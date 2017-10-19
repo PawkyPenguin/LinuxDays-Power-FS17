@@ -7,3 +7,8 @@
 *.odp
 *.tmp
 *.pdf
+*.nav
+*.out
+*.snm
+*.toc
+*.vrb
