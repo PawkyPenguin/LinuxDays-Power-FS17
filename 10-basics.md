@@ -75,7 +75,7 @@ $ zypper ref && zypper -n up && poweroff
 
 ### File Managers: Ranger
 * Completely commandline based
-* Even supports pictures
+* Even supports pictures (what?!)
 
 ![](resources/images/ranger.png){ height=30% }
 
