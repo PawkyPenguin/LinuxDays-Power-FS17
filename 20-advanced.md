@@ -164,4 +164,5 @@
 
 ### Look at logs
 * Under `/var/log`
+* Or `dmesg` for logs that you can't understand
 
