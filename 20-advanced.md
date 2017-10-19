@@ -129,7 +129,7 @@
 * `photorec`
 	* Works on broken filesystems
 	* Recovers videos, documents...
-	* ~300 file families supportede
+	* ~300 file families supported
 
 * `dd_rescue`
 	* Copies data (like dd)
