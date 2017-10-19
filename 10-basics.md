@@ -24,6 +24,8 @@ $ zypper ref && zypper -n up && poweroff
 ### 
 \bigtext{Replace anything!}
 
+\notsobigtext{The package manager is your friend}
+
 ### Start menus
 * xfce, kupfer, whisker, rofi
 
