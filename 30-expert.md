@@ -2,6 +2,11 @@
 
 ## Expert
 
+###
+\bigtext{Expert}
+
+\notsobigtext{Concepts needing some experience}
+
 ### Development
 * Very tight integration on commandline
 * Easy access to software
@@ -50,9 +55,3 @@
 	* Unreal Engine
 	* CryEngine
 	* Unity
-
-### Krita
-* Digital painting and animation
-* FOSS
-
-![](resources/images/krita.png){ height=30% }

@@ -77,3 +77,13 @@ $ zypper ref && zypper -n up && poweroff
 
 ![](resources/images/ranger.png){ height=30% }
 
+### Drawing
+* GIMP
+* Krita
+* Inkspace (for vector graphics)
+
+### Krita
+* Digital painting and animation
+* FOSS
+
+![](resources/images/krita.png){ height=30% }

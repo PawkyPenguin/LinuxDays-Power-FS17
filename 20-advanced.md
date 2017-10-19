@@ -158,9 +158,10 @@
 ### rsync (again)
 * `rsync -avh Downloads/ nils@192.168.1.1:media`
 
-### Look at logs
-* Under `/var/log`
-
 ### Cronjobs
 * Schedule jobs, e.g. daily, weekly...
 * Command: `crontab`
+
+### Look at logs
+* Under `/var/log`
+
